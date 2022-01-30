@@ -12,6 +12,8 @@ Using Memcached as local cache for MongoDB with dotnet 6
 Just enter the command below 
 
 	docker compose up
+	
+Caution: Generating 1 million of entries took at least 2 minutes
 
 ## Notes
 
