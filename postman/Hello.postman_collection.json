@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "b1ba1556-3529-4aae-a74b-663437b97bac",
+		"name": "Hello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get entries paginated",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/hello?PageIndex=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"hello"
+					],
+					"query": [
+						{
+							"key": "PageIndex",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all guids from the database",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/hello/guids",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"hello",
+						"guids"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a specific GUID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/hello/339b7f3b-7911-4e0c-91b5-175f64be5260",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"hello",
+						"339b7f3b-7911-4e0c-91b5-175f64be5260"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
